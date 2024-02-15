@@ -7,6 +7,7 @@
     --spacing: 10px;
     --blur: 5px;
     --border-radius: 30%;
+    --background-color: #460909;
 }
 
 .image {
@@ -26,7 +27,7 @@
 
 body {
     text-align: center;
-    background: #460909;
+    background: var(--background-color);
     color: white;
     font-family: 'helvetica neue', sans-serif;
     font-weight: 100;
@@ -41,10 +42,23 @@ h2 {
 
 .controls {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+
+}
+
+.controls label {
+    font-size: 20px;
+    margin-left: 15px;
+    text-transform: uppercase;
+
 }
 
 input {
-    width: 100px;
+    width: 70px;
 }
 
 .image {
